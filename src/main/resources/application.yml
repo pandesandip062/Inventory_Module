@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: inventory-service
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/inventory_db}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8081
+
+
+logging:
+  level:
+    com.company.inventory: DEBUG
+    org.hibernate.SQL: DEBUG
