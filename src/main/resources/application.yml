@@ -5,17 +5,17 @@ spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/inventory_db}
     username: ${SPRING_DATASOURCE_USERNAME:root}
-    password: ${SPRING_DATASOURCE_PASSWORD:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:Spande061@}
 
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: create
 
   flyway:
     enabled: true
 
 server:
-  port: 8081
+  port: 8089
 
 
 logging:
